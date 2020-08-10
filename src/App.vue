@@ -1,32 +1,34 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+        <Home />
+  </v-app>
 </template>
 
+<script>
+import Home from './components/Home';
+
+export default {
+  name: 'App',
+
+  components: {
+    Home,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
+body{
+  font-family: Zilla Slab;
+  font-style: normal;
   font-weight: bold;
-  color: #2c3e50;
+  font-size: 22px;
+  line-height: 26px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.nopadding{
+  margin:0px !important;
+  padding: 0px !important;
 }
 </style>
