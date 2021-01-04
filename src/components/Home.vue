@@ -263,9 +263,11 @@
           </v-col>
         </v-row>
         <v-row class="div5" no-gutters>
-            <v-col class="d-none d-md-flex" cols="12" md="4"> Aqui é onde vai o mascote, o fundo deve ser amarelo e ocupar 40% no full-screen e nada no mobile</v-col>
-            <v-col class="pb-8 my-5 ma-md-8" cols="12" md="7">
-                <div class="contato mx-2 py-4 px-2">
+            <v-col class="d-none d-md-flex py-8 pl-8 mt-2 justify-center" cols="12" md="4">
+              <img src="../assets/mascote.webp" alt="" height="90%" align="center" style="" />
+            </v-col>
+            <v-col class="pb-8 my-5 ma-md-8 align-center" cols="12" md="7">
+                <div class="contato mx-2 py-4 pr-2" ref="formcontato">
                   <v-row no-gutters>
                     <v-col class="pb-4" cols="12" md="12">
                       <h1 class="h1">Tem alguma dúvida?</h1>
